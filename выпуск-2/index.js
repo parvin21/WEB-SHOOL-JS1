@@ -1,9 +1,16 @@
-// [1,5, 2], -1 -> [5, 2, 1]
+// [1, 5, 2], -1 -> [5, 2, 1]
 // [1, 5, 2], 1 -> [1, 2, 5]
 
-export const sorting = () => {
-    //code here
+function compare(a, b) {
+    if (a > b) return 1;
+    if (a == b) return 0;
+    if (a < b) return -1;
 }
+
+let arr = [ 1, 5, 2 ];
+  
+console.log(arr.sort(compare)) 
+
 
 // [{age: 15, height: 140}, {age: 14, height: 150}], age -> [{age: 14, height: 150}, {age: 15, height: 150}]
 export const deepSorting = () => {
@@ -22,9 +29,8 @@ export const getNumbers = () => {
 
 
 // [1, 5, 34, -100] -> -100
-export const min = () => {
-    //code here
-}
+const min = Math.min(1, 5, 34, -100)
+console.log(min)
 
 
 
